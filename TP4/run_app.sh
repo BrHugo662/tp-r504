@@ -1,4 +1,4 @@
-
+set -x
 docker run -d \
   --name tp4-app \
   --network net-tp4 \
