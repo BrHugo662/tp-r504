@@ -8,7 +8,7 @@ db_config = {
     'host': 'tp4-sql',
     'user': 'root',
     'password': 'foo',
-    'database': 'demonsql'
+    'database': 'demosql'
 }
 
 # Initialize MySQL connection
