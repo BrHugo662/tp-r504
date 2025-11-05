@@ -1,5 +1,6 @@
 graph {
-A [shape="box"];
+node [image="router.png" shape="none"];
+edge [fontsize="20pt" color="red"];
 A [pos="10,5.5!"];
 B [pos="7,8!"];
 C [pos="7,4!"];
