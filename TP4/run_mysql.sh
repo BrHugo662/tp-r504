@@ -1,8 +1,7 @@
-# lancement serveur sql
-docker run --rm -d \
-  -p 3307:3306 \
-  -v vol-sql-demo:/var/lib/mysql \
+docker run -d \
   --name tp4-sql \
-  --env MYSQL_ROOT_PASSWORD=foo \
   --network net-tp4 \
+  -e MYSQL_ROOT_PASSWORD=foo \
+  -e MYSQL_DATABASE=demonsql \
+  -p 3307:3306 \
   mysql:8.0
