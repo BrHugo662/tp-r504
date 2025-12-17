@@ -1,2 +1,7 @@
 2.1. grep -P "^[^\.].*\.(jpg|png|gif)$" noms_fichiers.txt
 2.2 grep -P "^[\d-][^\+ x].*\d$" nombres.txt
+a="13:58";echo $a | grep -P "([0,1]\d|2[0-3]):[0-5]\d"  #question pour savoir si c'est une heure correcte
+2.3 grep -P "^[1]?[-\( ]?\d{3}[\) -]?\d{3}[ -]?\d{4}$" no_tel_USA.txt
+2.4 	a="^(2[0-4]\d|25[0-5]|1\d\d|[1-9]\d|[1-9])[^\d]"
+	grep --color -P "$a\.|$a\.|$a\.|$a" adresses_ipv4_1.txt
+a revoir grep --color -P "$a\.$a\.$a\.$a" adresses_ipv4_2.txt 
